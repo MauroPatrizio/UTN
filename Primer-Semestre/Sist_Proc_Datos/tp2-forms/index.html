@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="./form.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1><b>Formulario Carga de Datos</b></h1>
+        </header>
+        <main>
+            <form id="formulario">
+                <div class="datos">
+                    <label>
+                        Apellido
+                        <input type="text" name="apellido" id="apellido" value="" />
+                    </label>
+
+                    <label>
+                        Nombre
+                        <input type="text" name="nombre" id="nombre" value="" />
+                    </label>
+                    <br />
+                    <br />
+
+                    <label>
+                        Nro DNI
+                        <input type="number" name="dni" id="dni" />
+                    </label>
+
+                    <label>
+                        Fecha Nacimiento
+                        <input type="date" name="nacimiento" id="nacimiento" value="" />
+                    </label>
+                    <br />
+                    <br />
+
+                    <label>
+                        Domicilio
+                        <input type="text" name="domicilio" id="domicilio" value="" />
+                    </label>
+
+                    <label>
+                        Localidad
+                        <input type="text" name="localidad" id="localidad" value="" />
+                    </label>
+                </div>
+                <div>
+                    <h2><b>Idiomas que conoce</b></h2>
+
+                    <h4>Nivel de conocimiento</h4>
+
+                    <div class="language-container">
+                        <label>
+                            <input type="checkbox" id="spanish" value="spanish" onclick="habilitarInputRange('spanish', 'rngspanish')" />
+                            Español
+                        </label>
+
+                        <div class="slider-container">
+                            <label for="rngspanish">0--------50--------100</label>
+                            <input type="range" id="rngspanish" class="slider" min="0" max="100" step="1" value="0" disabled />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="language-container">
+                        <label>
+                            <input type="checkbox" id="english" value="english" onclick="habilitarInputRange('english', 'rngenglish')" />
+                            Inglés
+                        </label>
+                        <div class="slider-container">
+                            <label for="rngenglish">0--------50--------100</label>
+                            <input type="range" id="rngenglish" class="slider" min="0" max="100" step="1" value="0" disabled />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="language-container">
+                        <label>
+                            <input type="checkbox" id="french" value="french" onclick="habilitarInputRange('french', 'rngfrench')" />
+                            Francés
+                        </label>
+                        <div class="slider-container">
+                            <label for="rngfrench">0--------50--------100</label>
+                            <input type="range" id="rngfrench" class="slider" min="0" max="100" step="1" value="0" disabled />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="language-container">
+                        <label>
+                            <input type="checkbox" id="chinese" value="chinese" onclick="habilitarInputRange('chinese', 'rngchinese')" />
+                            Chino
+                        </label>
+                        <div class="slider-container">
+                            <label for="rngchinese">0--------50--------100</label>
+                            <input type="range" id="rngchinese" class="slider" min="0" max="100" step="1" value="0" disabled />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="buttons">
+                        <input type="submit" value="Enviar" onclick="mostrarDatos()" />
+                        <input type="reset" value="Borrar" />
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

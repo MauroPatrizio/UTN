@@ -1,0 +1,45 @@
+Informe sobre Expresiones Regulares
+
+Las expresiones regulares, son una poderosa herramienta utilizada en informática para buscar y validar patrones de texto. Se basan en una secuencia de caracteres que define un patrón de búsqueda, lo que permite encontrar, filtrar o modificar datos de texto de manera eficiente.
+
+Las expresiones regulares son una secuencia de caracteres que definen un patrón de búsqueda. Algunos conceptos clave relacionados con las expresiones regulares son:
+
+    Metacaracteres: Son caracteres especiales que tienen significados específicos en las expresiones regulares. Algunos ejemplos de metacaracteres son . (cualquier carácter), * (cero o más repeticiones), + (una o más repeticiones), ? (cero o una repetición), entre otros.
+
+    Cuantificadores: Los cuantificadores se utilizan para especificar la cantidad de repeticiones de un elemento en el patrón. Por ejemplo, {2} indica que el elemento se debe repetir 2 veces exactamente, {2,4} quiere decir que el elemento se debe repetir de 2 a 4 veces.
+
+    Caracteres de escape: Algunos caracteres especiales, como . o *, pueden perder su significado especial y tratarse como caracteres literales si se preceden de una barra invertida \.
+
+    Grupos de Captura: Los paréntesis ( ) se utilizan para agrupar elementos y capturar subcadenas dentro del texto que cumpla con el patrón.
+
+    Caracteres de clase: Se definen rangos de caracteres utilizando corchetes [ ], como [a-z] que coincidiría con cualquier letra minúscula.
+
+    Anclajes: Los anclajes como ^ (inicio de línea) y $ (fin de línea) se utilizan para indicar dónde debe comenzar o terminar una coincidencia.
+
+Diseño y Desarrollo del Programa de Validación de Datos
+
+Para comprender cómo se aplican las expresiones regulares en la validación de datos, consideremos un ejemplo de un programa que valida direcciones de correo electrónico. Un correo electrónico válido debe seguir ciertas reglas, como contener un nombre de usuario seguido de una arroba y un dominio. Las expresiones regulares son útiles para garantizar que las direcciones de correo electrónico ingresadas sean válidas.
+
+Por ejemplo para validar q un string contenga solo letras:
+
+public static boolean contieneSoloLetras(String cadena) {
+        return cadena.matches("^[a-zA-Z]+$");
+    }
+
+En este metodo definimos que desde el comienzo de la cadena (^) hasta el final ($), solo puede contener una o más (+) letras mayúsculas y minúsculas ([a-zA-Z])
+
+Si el string coincide con este patrón, se considera válida. De lo contrario, se considera inválida.
+
+Ejemplos de Validación de Datos
+
+A continuación, se presentan ejemplos de cómo se aplican las expresiones regulares en la validación de datos:
+
+    Validación de números de teléfono: Un patrón de expresión regular podría usarse para garantizar que los números de teléfono ingresados tengan el formato correcto, como (123) 456-7890.
+
+    Validación de códigos postales: Las expresiones regulares pueden utilizarse para garantizar que los códigos postales ingresados cumplan con el formato específico de un país.
+
+    Validación de números de tarjeta de crédito: Se pueden utilizar expresiones regulares para validar números de tarjeta de crédito según los patrones específicos de las principales compañías de tarjetas de crédito.
+
+Conclusión
+
+Las expresiones regulares son una herramienta fundamental en la validación de datos. Permiten definir patrones de búsqueda que ayudan a asegurar que los datos cumplan con las reglas y formatos deseados. Los ejemplos proporcionados demuestran cómo se pueden aplicar expresiones regulares en un programa de validación de datos para garantizar que los datos ingresados sean precisos y confiables. La comprensión de los conceptos de expresiones regulares y su aplicación adecuada en el diseño de programas es esencial para mejorar la calidad de los datos en cualquier sistema informático.
