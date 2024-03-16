@@ -1,4 +1,6 @@
-public class Bicycle extends Vehicle{
+package Ej1;
+
+public class Bicycle extends Vehicle {
     protected String type;
 
     public Bicycle() {
@@ -23,7 +25,7 @@ public class Bicycle extends Vehicle{
 
     @Override
     public String toString() {
-        return "Bicycle{" +
+        return "Ej1.Bicycle{" +
                 "type='" + type + '\'' +
                 ", color='" + color + '\'' +
                 ", wheels=" + wheels +

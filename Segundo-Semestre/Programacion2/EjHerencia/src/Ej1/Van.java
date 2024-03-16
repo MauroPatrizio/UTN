@@ -1,3 +1,5 @@
+package Ej1;
+
 public class Van extends Car {
     private float load;
 
@@ -24,7 +26,7 @@ public class Van extends Car {
 
     @Override
     public String toString() {
-        return "Van{" +
+        return "Ej1.Van{" +
                 "load=" + load +
                 ", speed=" + speed +
                 ", displacement=" + displacement +

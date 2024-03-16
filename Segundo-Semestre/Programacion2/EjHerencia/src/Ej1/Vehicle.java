@@ -1,3 +1,5 @@
+package Ej1;
+
 public abstract class Vehicle {
     protected String color;
     protected int wheels;

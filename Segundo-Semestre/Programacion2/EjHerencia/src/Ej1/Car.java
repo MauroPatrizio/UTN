@@ -1,3 +1,5 @@
+package Ej1;
+
 public class Car extends Vehicle{
     protected float speed;
     protected int displacement;
@@ -33,7 +35,7 @@ public class Car extends Vehicle{
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "Ej1.Car{" +
                 "speed=" + speed +
                 ", displacement=" + displacement +
                 ", color='" + color + '\'' +

@@ -1,4 +1,8 @@
-public class Motorcycle extends Bicycle{
+package Ej1;
+
+import Ej1.Bicycle;
+
+public class Motorcycle extends Bicycle {
     private float speed;
     private int displacement;
 
@@ -39,7 +43,7 @@ public class Motorcycle extends Bicycle{
 
     @Override
     public String toString() {
-        return "Motorcycle{" +
+        return "Ej1.Motorcycle{" +
                 "speed=" + speed +
                 ", displacement=" + displacement +
                 ", type='" + type + '\'' +
