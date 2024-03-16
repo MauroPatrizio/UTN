@@ -18,13 +18,18 @@ public class Van extends Car {
     }
 
     @Override
+    public int getWheels() {
+        return super.getWheels();
+    }
+
+    @Override
     public String toString() {
         return "Van{" +
                 "load=" + load +
                 ", speed=" + speed +
                 ", displacement=" + displacement +
                 ", color='" + color + '\'' +
-                ", wheeels=" + wheeels +
+                ", wheels=" + wheels +
                 '}';
     }
 }

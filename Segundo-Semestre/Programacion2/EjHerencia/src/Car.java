@@ -27,12 +27,17 @@ public class Car extends Vehicle{
     }
 
     @Override
+    public int getWheels() {
+        return 4;
+    }
+
+    @Override
     public String toString() {
         return "Car{" +
                 "speed=" + speed +
                 ", displacement=" + displacement +
                 ", color='" + color + '\'' +
-                ", wheeels=" + wheeels +
+                ", wheels=" + wheels +
                 '}';
     }
 }

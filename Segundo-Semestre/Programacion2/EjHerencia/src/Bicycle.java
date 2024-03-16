@@ -17,11 +17,16 @@ public class Bicycle extends Vehicle{
     }
 
     @Override
+    public int getWheels() {
+        return 2;
+    }
+
+    @Override
     public String toString() {
         return "Bicycle{" +
                 "type='" + type + '\'' +
                 ", color='" + color + '\'' +
-                ", wheeels=" + wheeels +
+                ", wheels=" + wheels +
                 '}';
     }
 }

@@ -33,13 +33,18 @@ public class Motorcycle extends Bicycle{
     }
 
     @Override
+    public int getWheels() {
+        return super.getWheels();
+    }
+
+    @Override
     public String toString() {
         return "Motorcycle{" +
                 "speed=" + speed +
                 ", displacement=" + displacement +
                 ", type='" + type + '\'' +
                 ", color='" + color + '\'' +
-                ", wheeels=" + wheeels +
+                ", wheels=" + wheels +
                 '}';
     }
 }
