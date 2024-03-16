@@ -1,0 +1,30 @@
+public class Van extends Car {
+    private float load;
+
+    public Van() {
+    }
+
+    public Van(float speed, int displacement, float load) {
+        super(speed, displacement);
+        this.load = load;
+    }
+
+    public float getLoad() {
+        return load;
+    }
+
+    public void setLoad(float load) {
+        this.load = load;
+    }
+
+    @Override
+    public String toString() {
+        return "Van{" +
+                "load=" + load +
+                ", speed=" + speed +
+                ", displacement=" + displacement +
+                ", color='" + color + '\'' +
+                ", wheeels=" + wheeels +
+                '}';
+    }
+}
