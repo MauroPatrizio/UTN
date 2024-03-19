@@ -9,10 +9,12 @@ public class Operario extends Empleado {
     public void operaciones(){
         System.out.println("El operario trabaja en el depósito");
     }
+
     @Override
     public String toString() {
         return "Operario{" +
-                "nombre='" + nombre + '\'' +
+                "dni=" + dni +
+                ", nombre='" + nombre + '\'' +
                 '}';
     }
 }

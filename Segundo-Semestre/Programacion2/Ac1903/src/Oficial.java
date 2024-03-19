@@ -10,10 +10,13 @@ public class Oficial extends Operario {
     public void supervisar(){
         System.out.println("El oficial supervisa las acciones del depósito");
     }
+
     @Override
     public String toString() {
         return "Oficial{" +
-                "nombre='" + nombre + '\'' +
+                "idOficial=" + idOficial +
+                ", dni=" + dni +
+                ", nombre='" + nombre + '\'' +
                 '}';
     }
 }

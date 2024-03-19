@@ -10,10 +10,12 @@ public class Directivo extends Empleado {
     public void decisiones(){
         System.out.println("El directivo está tomando decisiones sobre la empresa");
     }
+
     @Override
     public String toString() {
         return "Directivo{" +
-                "nombre='" + nombre + '\'' +
+                "dni=" + dni +
+                ", nombre='" + nombre + '\'' +
                 '}';
     }
 }
