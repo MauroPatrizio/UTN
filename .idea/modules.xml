@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Segundo-Semestre/Programacion2/Ac1903/Ac1903.iml" filepath="$PROJECT_DIR$/Segundo-Semestre/Programacion2/Ac1903/Ac1903.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Segundo-Semestre/Programacion2/EJ21-03/EJ21-03.iml" filepath="$PROJECT_DIR$/Segundo-Semestre/Programacion2/EJ21-03/EJ21-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Segundo-Semestre/Programacion2/Ej2-19-03/Ej2-19-03.iml" filepath="$PROJECT_DIR$/Segundo-Semestre/Programacion2/Ej2-19-03/Ej2-19-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Segundo-Semestre/Programacion2/EjHerencia/EjHerencia.iml" filepath="$PROJECT_DIR$/Segundo-Semestre/Programacion2/EjHerencia/EjHerencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Segundo-Semestre/Laboratorio2/Laboratorio2.iml" filepath="$PROJECT_DIR$/Segundo-Semestre/Laboratorio2/Laboratorio2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Parcial1/Parcial1.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Parcial1/Parcial1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Parcial2/Parcial2.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Parcial2/Parcial2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Regex/Regex.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Regex/Regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Regex2/Regex2.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/Regex2/Regex2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/RepasoParcial/RepasoParcial.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/RepasoParcial/RepasoParcial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP11/TP11.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP11/TP11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP4/TP4.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP4/TP4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP7/TP7.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP7/TP7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP8/TP8.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/TP8/TP8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UTN.iml" filepath="$PROJECT_DIR$/.idea/UTN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/arrays/arrays.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/arrays/arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/tp11_1/tp11_1.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/tp11_1/tp11_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/tp3/tp3.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/tp3/tp3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Primer-Semestre/Laboratorio1/tp9/tp9.iml" filepath="$PROJECT_DIR$/Primer-Semestre/Laboratorio1/tp9/tp9.iml" />
+    </modules>
+  </component>
+</project>
