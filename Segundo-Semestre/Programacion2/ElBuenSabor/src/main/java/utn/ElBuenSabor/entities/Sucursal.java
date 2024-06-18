@@ -1,5 +1,6 @@
 package utn.ElBuenSabor.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -37,6 +38,7 @@ public class Sucursal extends Base{
                 joinColumns = @JoinColumn(name = "sucursal_id"),
                 inverseJoinColumns = @JoinColumn(name = "promocion_id"))
     @Builder.Default
+    @JsonManagedReference
     private Set<Categoria> categorias = new HashSet<>();
 
     @ManyToMany
@@ -44,6 +46,7 @@ public class Sucursal extends Base{
     joinColumns = @JoinColumn(name = "sucursal_id"),
     inverseJoinColumns = @JoinColumn(name = "promocion_id"))
     @Builder.Default
+    @JsonManagedReference
     private Set<Promocion> promociones = new HashSet<>();
 
 }

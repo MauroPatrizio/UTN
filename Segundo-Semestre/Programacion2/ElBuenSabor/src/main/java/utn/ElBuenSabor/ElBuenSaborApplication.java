@@ -243,7 +243,10 @@ public class ElBuenSaborApplication {
 					.domicilio(dom3)
 					.empresa(empresa1)
 					.build();
+			sucursal1.getCategorias().add(categ1);
 			sucursalRepository.save(sucursal1);
+
+
 
 			Sucursal sucursal2 = Sucursal.builder()
 					.nombre("Sucursal 2")
@@ -253,7 +256,9 @@ public class ElBuenSaborApplication {
 					.domicilio(dom4)
 					.empresa(empresa1)
 					.build();
+			sucursal2.getCategorias().add(categ2);
 			sucursalRepository.save(sucursal2);
+
 
 			Usuario user1 = Usuario.builder()
 					.userName("Cliente")
@@ -392,8 +397,9 @@ public class ElBuenSaborApplication {
 					.precioPromocional(1500D)
 					.tipoPromocion(TipoPromocion.PROMOCION1)
 					.build();
+			promocion1.getSucursales().add(sucursal1);
+			promocion1.getImagenesPromocion().add(img1);
 			promocionRepository.save(promocion1);
-
 
 			Promocion promocion2 = Promocion.builder()
 					.denominacion("Promocion 2")
@@ -405,6 +411,8 @@ public class ElBuenSaborApplication {
 					.precioPromocional(2700D)
 					.tipoPromocion(TipoPromocion.HAPPYHOUR)
 					.build();
+			promocion2.getSucursales().add(sucursal1);
+			promocion2.getImagenesPromocion().add(img2);
 			promocionRepository.save(promocion2);
 
 

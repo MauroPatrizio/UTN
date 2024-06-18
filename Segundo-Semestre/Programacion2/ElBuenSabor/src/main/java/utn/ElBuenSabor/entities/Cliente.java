@@ -1,5 +1,6 @@
 package utn.ElBuenSabor.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,5 +21,6 @@ public class Cliente extends Persona{
                 joinColumns = @JoinColumn(name = "cliente_id"),
                 inverseJoinColumns = @JoinColumn(name = "domicilio_id"))
     @Builder.Default
+    @JsonManagedReference
     private Set<Domicilio> domicilios = new HashSet<>();
 }

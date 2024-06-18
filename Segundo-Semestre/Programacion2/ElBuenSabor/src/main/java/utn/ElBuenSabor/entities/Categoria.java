@@ -1,5 +1,6 @@
 package utn.ElBuenSabor.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -27,4 +28,9 @@ public class Categoria extends Base{
     @JoinColumn(name = "categoria_padre_id")
     @JsonIgnore //para impedir que se genere un bucle en la llamada GET
     private Categoria categoriaPadre;
+
+    @ManyToMany(mappedBy = "categorias")
+    @Builder.Default
+    @JsonBackReference
+    private Set<Sucursal> sucursales = new HashSet<>();
 }

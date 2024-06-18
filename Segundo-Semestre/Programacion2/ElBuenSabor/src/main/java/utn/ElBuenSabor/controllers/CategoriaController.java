@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import utn.ElBuenSabor.entities.Categoria;
 import utn.ElBuenSabor.services.CategoriaService;
+import utn.ElBuenSabor.services.SucursalService;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,6 +19,8 @@ public class CategoriaController extends BaseController<Categoria, Long>{
 
     @Autowired
     private CategoriaService categoriaService;
+    @Autowired
+    private SucursalService sucursalService;
 
     @PostMapping("/subcategoria/{id_CP}")
     public Optional<Categoria> agregarSubCategoria(@PathVariable Long id_CP, @RequestBody Categoria subCategoria) throws Exception{
@@ -30,4 +33,10 @@ public class CategoriaController extends BaseController<Categoria, Long>{
         List<Categoria> categorias = categoriaService.listarPorCategoriaPadre(id);
         return ResponseEntity.ok(categorias);
     }
+    @GetMapping("/sucursal/{sucursalId}")
+    public ResponseEntity<List<Categoria>> listarPorSucursal(@PathVariable Long sucursalId) throws Exception{
+        List<Categoria> categorias = categoriaService.listarPorCategoriaPadre(sucursalId);
+        return ResponseEntity.ok(categorias);
+    }
+
 }

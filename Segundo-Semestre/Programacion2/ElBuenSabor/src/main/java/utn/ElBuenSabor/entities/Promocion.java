@@ -1,5 +1,6 @@
 package utn.ElBuenSabor.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 import utn.ElBuenSabor.entities.enums.TipoPromocion;
@@ -37,4 +38,10 @@ public class Promocion extends Base{
     @OneToMany
     @Builder.Default
     private Set<Imagen> imagenesPromocion = new HashSet<>();
+
+    @ManyToMany(mappedBy = "promociones")
+    @Builder.Default
+    @JsonBackReference
+    private Set<Sucursal> sucursales = new HashSet<>();
+
 }

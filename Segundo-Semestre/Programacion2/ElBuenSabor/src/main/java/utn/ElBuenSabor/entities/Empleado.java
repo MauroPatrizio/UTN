@@ -1,5 +1,6 @@
 package utn.ElBuenSabor.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,6 +14,7 @@ import lombok.*;
 public class Empleado extends Persona{
 
     @ManyToOne
+    @JsonManagedReference
     @JoinColumn(name = "sucursal_id")
     private Sucursal sucursal;
 }

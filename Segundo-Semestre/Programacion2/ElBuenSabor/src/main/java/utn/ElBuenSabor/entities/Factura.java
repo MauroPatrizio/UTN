@@ -31,4 +31,7 @@ public class Factura extends Base{
     @Column(name = "total_venta")
     private Double totalVenta;
 
+    @OneToOne(mappedBy = "factura")
+    private Pedido pedido;
+
 }

@@ -1,5 +1,6 @@
 package utn.ElBuenSabor.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import utn.ElBuenSabor.entities.enums.Estado;
@@ -47,7 +48,9 @@ public class Pedido extends Base{
 
     @OneToOne
     @JoinColumn(name = "factura_id")
+    @JsonIgnore
     private Factura factura;
+
 
 
 }

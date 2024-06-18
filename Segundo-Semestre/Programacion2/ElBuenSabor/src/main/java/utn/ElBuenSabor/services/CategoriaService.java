@@ -4,7 +4,10 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import utn.ElBuenSabor.entities.Categoria;
+import utn.ElBuenSabor.entities.Provincia;
+import utn.ElBuenSabor.entities.Sucursal;
 import utn.ElBuenSabor.repositories.CategoriaRepository;
+import utn.ElBuenSabor.repositories.SucursalRepository;
 
 import java.util.List;
 
@@ -41,4 +44,13 @@ public class CategoriaService extends BaseService<Categoria, Long>{
             throw new Exception(e.getMessage());
         }
     }
+    @Transactional
+    public List<Categoria> listarPorSucursal(Long sucursalId) throws Exception{
+        try {
+            return categoriaRepository.findAllBySucursalesId(sucursalId);
+        }catch (Exception e){
+            throw new Exception(e.getMessage());
+        }
+    }
+
 }

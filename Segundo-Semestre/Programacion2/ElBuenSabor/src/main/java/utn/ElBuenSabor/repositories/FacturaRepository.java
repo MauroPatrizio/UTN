@@ -5,4 +5,5 @@ import utn.ElBuenSabor.entities.Factura;
 
 @Repository
 public interface FacturaRepository extends BaseRepository<Factura, Long>{
+    Factura findByPedidoId(Long pedidoId);
 }

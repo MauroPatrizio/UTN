@@ -6,7 +6,7 @@ import utn.ElBuenSabor.entities.ArticuloManufacturado;
 import utn.ElBuenSabor.services.ArticuloManufacturadoService;
 
 @RestController
-@RequestMapping("/articulo-manufacturado")
+@RequestMapping("/articulo_manufacturado")
 public class ArticuloManufacturadoController extends BaseController<ArticuloManufacturado, Long>{
     public ArticuloManufacturadoController(ArticuloManufacturadoService articuloManufacturadoService) {
         super(articuloManufacturadoService);
