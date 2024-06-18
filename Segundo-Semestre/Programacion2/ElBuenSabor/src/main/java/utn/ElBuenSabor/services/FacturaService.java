@@ -18,7 +18,7 @@ public class FacturaService extends BaseService<Factura, Long> {
     @Transactional
     public Factura buscarPorPedido(Long pedidoId) throws Exception {
         try {
-            return facturaRepository.findById(pedidoId).get();
+            return facturaRepository.findByPedidoId(pedidoId);
         }catch (Exception e){
             throw new Exception(e.getMessage());
         }

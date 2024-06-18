@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import utn.ElBuenSabor.entities.Factura;
 import utn.ElBuenSabor.services.FacturaService;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/factura")
 public class FacturaController extends BaseController{
@@ -20,8 +22,8 @@ public class FacturaController extends BaseController{
     private FacturaService facturaService;
 
     @GetMapping("/pedido/{pedidoId}")
-    public ResponseEntity<Factura> buscarPorPedidoId(@PathVariable Long pedidoId) throws Exception{
+    public Optional<Factura> buscarPorPedidoId(@PathVariable Long pedidoId) throws Exception{
         Factura factura = facturaService.buscarPorPedido(pedidoId);
-        return ResponseEntity.ok(factura);
+        return Optional.ofNullable(factura);
     }
 }

@@ -27,7 +27,7 @@ public class DomicilioController extends BaseController<Domicilio, Long>{
         return ResponseEntity.ok(domicilios);
     }
 
-    @GetMapping("/localidad/{clienteId}")
+    @GetMapping("/cliente/{clienteId}")
     public ResponseEntity<List<Domicilio>> listarPorCliente(@PathVariable Long clienteId) throws Exception{
         List<Domicilio> domicilios = domicilioService.listarPorCliente(clienteId);
         return ResponseEntity.ok(domicilios);
