@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="buenSabor" transaction-type="RESOURCE_LOCAL">
+    <class>utn.BuenSabor.entities.Empresa</class>
+    <class>utn.BuenSabor.entities.Pais</class>
+    <class>utn.BuenSabor.entities.Provincia</class>
+    <class>utn.BuenSabor.entities.Localidad</class>
+    <class>utn.BuenSabor.entities.Domicilio</class>
+    <class>utn.BuenSabor.entities.Sucursal</class>
+    <class>utn.BuenSabor.entities.Promocion</class>
+    <class>utn.BuenSabor.entities.ArticuloManufacturado</class>
+    <class>utn.BuenSabor.entities.Articulo</class>
+    <class>utn.BuenSabor.entities.ArticuloInsumo</class>
+    <class>utn.BuenSabor.entities.PromocionDetalle</class>
+    <class>utn.BuenSabor.entities.ImagenPromocion</class>
+    <class>utn.BuenSabor.entities.ArticuloManufacturadoDetalle</class>
+    <class>utn.BuenSabor.entities.ImagenArticulo</class>
+    <class>utn.BuenSabor.entities.Categoria</class>
+    <class>utn.BuenSabor.entities.DetallePedido</class>
+    <class>utn.BuenSabor.entities.UnidadMedida</class>
+    <class>utn.BuenSabor.entities.Pedido</class>
+    <class>utn.BuenSabor.entities.Factura</class>
+    <class>utn.BuenSabor.entities.Empleado</class>
+    <class>utn.BuenSabor.entities.ImagenEmpleado</class>
+    <class>utn.BuenSabor.entities.UsuarioEmpleado</class>
+    <class>utn.BuenSabor.entities.UsuarioCliente</class>
+    <class>utn.BuenSabor.entities.Cliente</class>
+    <class>utn.BuenSabor.entities.ImagenCliente</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/buenSabor"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+

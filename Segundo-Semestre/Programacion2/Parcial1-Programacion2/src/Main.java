@@ -55,6 +55,5 @@ public class Main {
         for (Athlete athlete: argentina.getAthletes()){
             System.out.println(athlete.getName() + ": " + ((athlete.extraWeight()) ? "Tiene sobrepeso" : "No tiene sobrepeso"));
         }
-
     }
 }
