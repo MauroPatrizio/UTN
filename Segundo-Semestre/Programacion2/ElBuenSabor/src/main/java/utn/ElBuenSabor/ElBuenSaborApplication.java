@@ -146,6 +146,7 @@ public class ElBuenSaborApplication {
 					.tiempoEstimadoMinutos(150)
 					.preparacion("Preparacion articulo manufacturado 1")
 					.unidadMedida(uniM1)
+					.categoria(categ1)
 					.build();
 			articuloManufacturadoRepository.save(artMan1);
 
@@ -156,6 +157,7 @@ public class ElBuenSaborApplication {
 					.tiempoEstimadoMinutos(100)
 					.preparacion("Preparacion articulo manufacturado 2")
 					.unidadMedida(uniM2)
+					.categoria(categ2)
 					.build();
 			articuloManufacturadoRepository.save(artMan2);
 
