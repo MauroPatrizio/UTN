@@ -3,15 +3,51 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>JavaScript</title>
 	</head>
 	<body>
-		<script src="Scripts/add.js"></script>
-		<script src="Scripts/name.js"></script>
-		<script src="Scripts/greater.js"></script>
-		<script src="Scripts/even-odd.js"></script>
-		<script src="Scripts/countdown.js"></script>
-		<script src="Scripts/greater-100.js"></script>
-		<script src="./main.js"></script>
+		<div id="parrafos">
+			<p>Este es el primer párrafo</p>
+			<p>Este es el segundo párrafo</p>
+			<p>Este es el tercer párrafo</p>
+
+			<button type="button" id="btn-azul">Cambiar color a azul</button>
+		</div>
+		<br />
+		<div class="border">
+			<form action="">
+				<label for="texto">Ingresa un texto:</label>
+				<input id="texto" type="text" name="texto" placeholder="Mensaje" />
+
+				<button type="submit" id="btn-form">Mostrar Alerta</button>
+			</form>
+		</div>
+		<br />
+		<div class="border">
+			<ul id="lista">
+				<li>Elemento 1</li>
+				<li>Elemento 2</li>
+				<li>Elemento 3</li>
+				<li>Elemento 4</li>
+			</ul>
+		</div>
+		<br />
+		<div class="border">
+			<input type="text" name="txt-ej2" id="txt-ej2" placeholder="Ingresa algo" />
+			<button type="button" id="deshabilitar">Deshabilitar Campo</button>
+			<button type="button" id="habilitar">Habilitar Campo</button>
+		</div>
+		<br />
+		<div class="border" id="form_email_container">
+			<form action="">
+				<label for="email">Correo Electrónico</label>
+				<input type="email" name="email" id="email" />
+				<button id="email__button">Guardar Correo</button>
+				<div id="stored_email"></div>
+			</form>
+		</div>
+
+		<script type="module" src="./main.js"></script>
 	</body>
 </html>
