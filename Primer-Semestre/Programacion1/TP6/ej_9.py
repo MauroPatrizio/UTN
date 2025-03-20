@@ -11,7 +11,7 @@ cards = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
 matched_cards = set()
 
 def print_board(board, matched_cards):
-     for i in range(len(board)):
+    for i in range(len(board)):
         for j in range(len(board[i])):
             if (i,j) in matched_cards or board[i][j] == " ":
                 print(board[i][j], end=" ")

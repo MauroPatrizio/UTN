@@ -1,0 +1,16 @@
+{
+  "tareas": [
+    {
+      "id": "1742430595267",
+      "titulo": "cosa",
+      "descripcion": "asdf",
+      "fechaLimite": "2025-03-06"
+    },
+    {
+      "id": "1742431914054",
+      "titulo": "tarea 2",
+      "descripcion": "cosita",
+      "fechaLimite": "0234-04-23"
+    }
+  ]
+}

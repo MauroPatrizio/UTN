@@ -14,7 +14,7 @@ for char in "".join(text_list):
         if char in char_dict:
             char_dict[char] += 1
         else:
-             char_dict[char] = 1
+            char_dict[char] = 1
 
 for char, count in char_dict.items():
     print(f"'{char}': {count}")

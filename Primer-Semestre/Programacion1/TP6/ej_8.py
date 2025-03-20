@@ -1,6 +1,6 @@
 # 8.	Diez equipos de la liga inter-barrial identificados con los números 1, 2, 3, 4, …, 10, participaron en un campeonato de fútbol con modalidad todos contra todos.
 # Los goles anotados en cada encuentro se registraron en el siguiente cuadro:
- 
+
 # Escriba un programa que:
 # o	Lea el cuadro de goles en un arreglo de dos dimensiones.
 # o	Muestre para cada equipo la cantidad de triunfos, empates y derrotas.

@@ -11,7 +11,7 @@ while True:
         number_list.append(number)
 
 print (number_list)
-     
+
 
 # 2.	A continuación, solicitar al usuario que ingrese un número y, si el número está en la lista, eliminar su primera ocurrencia. Mostrar un mensaje si no es posible eliminar.
 number_to_remove = validations.only_numbers("Enter the number you want to remove: ")

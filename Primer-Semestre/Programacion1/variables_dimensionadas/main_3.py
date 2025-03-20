@@ -1,9 +1,9 @@
 import validations
 
 members = {
-   1: {"name": "Amanda Núñez", "join_date": "17032009", "fee_up_to_date": True},
-   2: {"name": "Lautaro Campos", "join_date": "17032009", "fee_up_to_date": True},
-   3: {"name": "Bárbara Molina", "join_date": "17032009", "fee_up_to_date": True},
+    1: {"name": "Amanda Núñez", "join_date": "17032009", "fee_up_to_date": True},
+    2: {"name": "Lautaro Campos", "join_date": "17032009", "fee_up_to_date": True},
+    3: {"name": "Bárbara Molina", "join_date": "17032009", "fee_up_to_date": True},
 }
 
 member_id = 3

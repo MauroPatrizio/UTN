@@ -7,7 +7,7 @@
 import re 
 
 class Person:
-   
+
     def __init__(self, name="", age="", dni=""):
         self.__name = name
         self.__age = age
