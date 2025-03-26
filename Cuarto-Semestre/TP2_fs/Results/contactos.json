@@ -1,1 +1,12 @@
-{"nombre":"Mauro","telefono":"123456789","email":"mauro@mail.com"}
+[
+  {
+    "nombre": "Mauro",
+    "telefono": "123456789",
+    "email": "mauro@mail.com"
+  },
+  {
+    "nombre": "Carlos López",
+    "telefono": "987-654-3210",
+    "email": "carlos@example.com"
+  }
+]

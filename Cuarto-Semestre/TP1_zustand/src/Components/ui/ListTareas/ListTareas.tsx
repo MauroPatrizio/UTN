@@ -44,7 +44,7 @@ export const ListTareas = () => {
 						))
 					) : (
 						<div>
-							<h3>No hay tareas</h3>
+							<h3 style={{ color: "white" }}>No hay tareas</h3>
 						</div>
 					)}
 				</div>

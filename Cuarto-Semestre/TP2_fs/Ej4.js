@@ -26,9 +26,13 @@ fs.readFile(fileName, "utf-8", (e, data) => {
 		process.exit(1);
 	}
 
-	const regex = new RegExp(`\\b${word}\b`, "gi");
+	const regex = new RegExp(`\\b${word}\\b`, "gi");
 	const match = data.match(regex);
 	const count = match ? match.length : 0;
 
-	console.log(`La palabra "${word}" aparece ${count} veces en el archivo "${fileName}"`);
+	console.log(
+		count > 0
+			? `La palabra "${word}" aparece ${count} veces en el archivo "${fileName}"`
+			: `La palabra "${word}" no aparece en el archivo "${fileName}"`
+	);
 });

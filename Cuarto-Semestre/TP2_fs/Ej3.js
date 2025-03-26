@@ -1,4 +1,4 @@
-// Ejercicio 3
+// //Ejercicio 3
 
 // Instrucciones:
 // Crear un archivo llamado contactos.json con el siguiente contenido inicial:
@@ -34,45 +34,59 @@
 // mostrarContactos();
 
 const fs = require("fs");
-const [, , name, tel, mail] = process.argv;
+
+const FILE_PATH = "./Results/contactos.json";
 
 if (!fs.existsSync("Results")) {
 	fs.mkdirSync("Results");
 }
 
-const initialData = {
-	nombre: "Mauro",
-	telefono: "123456789",
-	email: "mauro@mail.com",
-};
-
-if (!fs.existsSync("./Results/contactos.json")) {
-	fs.mkdirSync("./Results/contactos.json");
-}
-fs.writeFileSync("./Results/contactos.json", JSON.stringify(initialData));
-
-function addContact(name, tel, mail) {
-	fs.appendFileSync("./Results/contactos.json", JSON.pa);
+if (!fs.existsSync(FILE_PATH)) {
+	fs.writeFileSync(FILE_PATH, JSON.stringify([], null, 2));
 }
 
-if ((name, tel, mail)) {
-	addContact(name, tel, mail);
-} else {
-	console.log(`Debe dar el nombre, telefono y mail`);
-}
-
-function showContacts() {
-	console.log(fs.readFileSync("./Results/contactos.json", "utf8"));
-}
-
-function deleteContact(nombre) {
-	const contacts = JSON.parse(fs.readFileSync("contactos.json", "utf-8"));
-	const initialQty = contacts.length();
-	contacts = contacts.filter((contact) => contact.name !== name);
-	if (contacts.length() < initialQty) {
+function leerContactos() {
+	try {
+		const data = fs.readFileSync(FILE_PATH, "utf8");
+		return JSON.parse(data) || [];
+	} catch (error) {
+		return [];
 	}
 }
 
-showContacts();
+function agregarContacto(nombre, telefono, email) {
+	const contactos = leerContactos();
+	if (!Array.isArray(contactos)) {
+		console.error("Error: el archivo de contactos no tiene un formato válido.");
+		return;
+	}
+	contactos.push({ nombre, telefono, email });
+	fs.writeFileSync(FILE_PATH, JSON.stringify(contactos, null, 2));
+	console.log(`Contacto ${nombre} agregado.`);
+}
 
-console.log(typeof initialData);
+function mostrarContactos() {
+	const contactos = leerContactos();
+	console.log("Lista de contactos:");
+	console.log(contactos);
+}
+
+function eliminarContacto(nombre) {
+	let contactos = leerContactos();
+	if (!Array.isArray(contactos)) {
+		console.error("Error: el archivo de contactos no tiene un formato válido.");
+		return;
+	}
+	const nuevosContactos = contactos.filter((contacto) => contacto.nombre !== nombre);
+	if (contactos.length === nuevosContactos.length) {
+		console.log(`No se encontró el contacto: ${nombre}`);
+		return;
+	}
+	fs.writeFileSync(FILE_PATH, JSON.stringify(nuevosContactos, null, 2));
+	console.log(`Contacto ${nombre} eliminado.`);
+}
+
+agregarContacto("Carlos López", "987-654-3210", "carlos@example.com");
+mostrarContactos();
+eliminarContacto("Juan Pérez");
+mostrarContactos();

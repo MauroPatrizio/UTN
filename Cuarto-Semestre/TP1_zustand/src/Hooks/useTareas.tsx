@@ -53,6 +53,7 @@ export const useTareas = () => {
 			showCancelButton: true,
 			confirmButtonText: "Sí, eliminar",
 			cancelButtonText: "Cancelar",
+			
 		});
 		if (!confirm.isConfirmed) return;
 		eliminarUnaTarea(idTarea);
