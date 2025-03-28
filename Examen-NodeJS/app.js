@@ -1,8 +1,6 @@
 import readline from "readline";
 import fs from "fs";
 import yargs from "yargs";
-import { resolve } from "path";
-import { hideBin } from "yargs/helpers";
 
 const rl = readline.createInterface({
 	input: process.stdin,
@@ -10,7 +8,7 @@ const rl = readline.createInterface({
 	terminal: false,
 });
 
-const argv = yargs(hideBin(process.argv))
+const argv = yargs(process.argv)
 	.option("file", {
 		archivo: {
 			describe: "Nombre del archivo",
@@ -23,7 +21,6 @@ const argv = yargs(hideBin(process.argv))
 async function getData() {
 	const questions = (question) =>
 		new Promise((resolve) => {
-			// Corrección aquí
 			rl.question(question, resolve);
 		});
 

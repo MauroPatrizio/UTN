@@ -3,5 +3,20 @@
     "nombre": "coso",
     "precio": 2,
     "cantidad": 234
+  },
+  {
+    "nombre": "coso",
+    "precio": 9,
+    "cantidad": 4
+  },
+  {
+    "nombre": "puerro",
+    "precio": 3,
+    "cantidad": 34
+  },
+  {
+    "nombre": "puerro",
+    "precio": 3.34,
+    "cantidad": 23
   }
 ]
