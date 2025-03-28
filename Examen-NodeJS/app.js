@@ -2,6 +2,7 @@ import readline from "readline";
 import fs from "fs";
 import yargs from "yargs";
 import { resolve } from "path";
+import { hideBin } from "yargs/helpers";
 
 const rl = readline.createInterface({
 	input: process.stdin,
@@ -9,8 +10,8 @@ const rl = readline.createInterface({
 	terminal: false,
 });
 
-const argv = yargs
-	.command("nombrar", "Nombre del archivo", {
+const argv = yargs(hideBin(process.argv))
+	.option("file", {
 		archivo: {
 			describe: "Nombre del archivo",
 			demandOption: true,
@@ -20,7 +21,11 @@ const argv = yargs
 	.help().argv;
 
 async function getData() {
-	const questions = (question) => new Promise((resolve = rl.question(question, resolve)));
+	const questions = (question) =>
+		new Promise((resolve) => {
+			// Corrección aquí
+			rl.question(question, resolve);
+		});
 
 	try {
 		const nombre = await questions("Nombre del producto: ");
@@ -38,7 +43,7 @@ async function getData() {
 }
 
 async function saveData(product) {
-	const fileName = argv.archivo;
+	const fileName = argv.file;
 
 	try {
 		if (fs.existsSync(fileName)) {
@@ -58,9 +63,13 @@ async function saveData(product) {
 	}
 }
 
-try {
-	const product = await getData();
-	await saveData(product);
-} catch (e) {
-	console.log(e);
+async function main() {
+	try {
+		const product = await getData();
+		await saveData(product);
+	} catch (e) {
+		console.log(e);
+	}
 }
+
+main();
