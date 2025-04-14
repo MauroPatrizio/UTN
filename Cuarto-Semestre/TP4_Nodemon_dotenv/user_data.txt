@@ -1,0 +1,3 @@
+Nombre: mauro
+Edad: 35
+Email: coso@coso
